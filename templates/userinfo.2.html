@@ -1,0 +1,29 @@
+<!doctype html>
+<title>Plot the price of a ticker</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style_lulu.css')}}'>
+<div class=page>
+  <h1>Plot the price of a ticker</h1>
+  <div class=metanav>
+
+<h4>
+Please insert Ticker name (eg CFFN).
+</h4>
+
+<form id='userinfoform' method='post' action='index_close' > <!-- action is the URL you want to move to next-->
+   <p>
+   Name: <input type='text' name='name' />
+   </p>
+   <p>
+   Type of data: <br />
+   <input type='radio' vertical-align: sub name='data_type', id='close', value={{ans1}} /> close <br />
+   <input type='radio' vertical-align: sub name='data_type', id='close_adj', value={{ans2}} /> close_adj<br />
+   <input type='radio' vertical-align: sub name='data_type', id='open', value={{ans3}} /> open<br />
+   </p>
+   <p>
+   <input type='submit' value='Submit' /> <!-- value is the text that will appear on the button. -->
+   </p>
+
+</form>
+
+</div>
+</div>
