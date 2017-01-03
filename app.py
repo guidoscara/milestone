@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 
 ## download the database
-raw_request = Request('https://www.quandl.com/api/v3/datatables/WIKI/PRICES.json?qopts.columns=ticker,date,close,adj_close,open&date.gte=20161001&date.lt=20161101&api_key=mZzYwdeyrqRXhGWKzUg6')
+raw_request = Request('https://www.quandl.com/api/v3/datatables/WIKI/PRICES.json?qopts.columns=ticker,date,close,adj_close,open&date.gte=20161201&date.lt=20161231&api_key=mZzYwdeyrqRXhGWKzUg6')
 response = urlopen(raw_request)
 data_sticker_raw = response.read()
 data_sticker_json = json.loads(data_sticker_raw)
